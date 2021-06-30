@@ -20,5 +20,14 @@ describe("stringCalc", () => {
     it ("should return 22 on '4,5,6,7' ", () => {
         expect(stringCalc("4,5,6,7")).toBe(22)
     })
+
+    it ("should return 6 on '1\n2,3' ", () => {
+        expect(stringCalc("1\n2,3")).toBe(6)
+    })
+
+    //it ("should return 6 on '1\n2,\n3' ", () => {
+    //    expect(stringCalc("1\n2,\n3")).toBe(6)
+    //})
+
 })
 

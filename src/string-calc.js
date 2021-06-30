@@ -1,5 +1,5 @@
 function stringCalc(numbers){
-    const stringList = numbers.split(',')
+    const stringList = numbers.split( /\n|,/)
     const numList = stringList.map((x) => parseInt(x, 10))
     
 
