@@ -1,13 +1,18 @@
 function stringCalc(numbers){
-    const result = numbers.split(',')
-    const firstSummand = parseInt(result[0])
-    const secondSummand = (result[1] === undefined)?0:parseInt(result[1], 10) 
+    const stringList = numbers.split(',')
+    const numList = stringList.map((x) => parseInt(x, 10))
+    
+
     if(numbers === "") 
     {
         return 0
     }
+    let sum = 0;
+    numList.forEach((x) => {
+        sum += x
+    })
 
-        return firstSummand + secondSummand
+        return sum
 }
 
 
