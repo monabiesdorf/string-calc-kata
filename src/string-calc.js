@@ -1,6 +1,9 @@
 function stringCalc(numbers){
-    const stringList = numbers.split( /\n|,/)
+    
+    const stringList = numbers.split( /\D+/g)
     const numList = stringList.map((x) => parseInt(x, 10))
+
+    console.log(stringList)
     
 
     if(numbers === "") 
